@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title }}</title>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+        rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/eeed48d253.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.html') }}">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .movie {
+            text-align: center;
+        }
+
+        table,
+        tr,
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        button {
+            width: 25%;
+            padding: 1em;
+            margin: 1em;
+            border-radius: 5px;
+            color: white;
+            background-color: dodgerblue;
+            border-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="movie">
+        <h2 class="title"><u>Recommendations</u></h2>
+        <p>Showing results for: <mark>{{ title }}</mark></p>
+        <table class="movie_table" align="center">
+            <tr>
+                <th>Movie Title</th>
+                <th>Value</th>
+            </tr>
+            <tbody class="table_body">
+                <tr>
+                    <td>{{ movie_names[0] }}</td>
+                    <td>{{ movie_date[0] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[1] }}</td>
+                    <td>{{ movie_date[1] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[2] }}</td>
+                    <td>{{ movie_date[2] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[3] }}</td>
+                    <td>{{ movie_date[3] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[4] }}</td>
+                    <td>{{ movie_date[4] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[5] }}</td>
+                    <td>{{ movie_date[5] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[6] }}</td>
+                    <td>{{ movie_date[6] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[7] }}</td>
+                    <td>{{ movie_date[7] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[8] }}</td>
+                    <td>{{ movie_date[8] }}</td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[9] }}</td>
+                    <td>{{ movie_date[9] }}</td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br>
+        <p align="center" style="text-decoration: none;"><a href="/" style="text-decoration: none;"><button
+                    class="button is-link is-outlined" style="height:75px;width:250px">Search for another
+                    movie</button></a></p>
+    </div>
+</body>
+
+</html>
