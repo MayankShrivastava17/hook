@@ -1,4 +1,4 @@
-# hook
+# Hook
 
 Movie Recommendation using [sklearn](https://scikit-learn.org/stable/index.html) and [flask](https://flask.palletsprojects.com/en/1.1.x/).
 
