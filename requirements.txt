@@ -1,6 +1,6 @@
 pandas==1.2.3
 scipy==1.5.4
-Flask==1.1.2
+Flask==2.2.5
 numpy==1.22.2
 scikit_learn==0.24.2
 click==7.1.2
