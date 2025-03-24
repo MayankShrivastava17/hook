@@ -4,7 +4,7 @@ Flask==1.1.2
 numpy==1.22.2
 scikit_learn==0.24.2
 click==7.1.2
-gunicorn==20.0.4
+gunicorn==23.0.0
 itsdangerous==1.1.0
 Jinja2==2.11.3
 MarkupSafe==1.1.1
